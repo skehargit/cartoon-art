@@ -80,11 +80,12 @@
   left: 50%;
 }
 .face{
-  background-color:rgb(250, 208, 180) ;
+  /* background-color:rgb(250, 208, 180) ; */
   z-index: -10;
   border: 1px solid black;
 }
 .face-1{
+  /* overflow: hidden; */
   position: absolute;
   height: 25%;
   width: 30%;
@@ -97,6 +98,7 @@
 
 }
 .face-2{
+  /* overflow: hidden; */
   position: absolute;
   height: 25%;
   width: 30%;
@@ -111,8 +113,8 @@
 
 }
 .faceshadow{
-  background-color: rgb(248, 162, 138);
-  /* border: 1px solid black; */
+  /* background-color: rgb(248, 162, 138); */
+  border: 1px solid black;
 
 }
 .faceshadow1{
@@ -332,6 +334,47 @@
   width: 10%;
   border-radius: 50% 60% 0 60% ;
 }
+.ear{
+  /* background-color:rgb(250, 208, 180) ; */
+  background-image: linear-gradient(180deg, rgb(248, 200, 168), rgb(247, 213, 190));
+  /* border: 1px solid rgb(255, 0, 0); */
+  position: absolute;
+  height: 53%;
+  width: 23%;
+  left: 125%;
+  top:30%;
+  border-radius: 70% 50% 100% 30%;
+}
+.innerear{
+  background-image: linear-gradient(180deg, brown, rgba(249, 209, 183, 0.913));
+  overflow: hidden;
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-bottom: none;
+  position: absolute;
+  height: 53%;
+  width: 50%;
+  left: 20%;
+  top:30%;
+  border-radius: 80% 70% 100% 30%;
+  transform: rotate(35deg);
+}
+.innerear2{
+  background-image: linear-gradient(180deg, rgb(155, 32, 32), rgba(249, 209, 183, 0.913));
+  overflow: hidden;
+  /* border: 1px solid rgb(0, 0, 0); */
+  border-bottom: none;
+  border-left: none;
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  left: 20%;
+  top:35%;
+  border-radius: 80% 70% 100% 30%;
+  transform: rotate(35deg);
+}
+.hair1{
+  
+}
 
 
     </style>
@@ -372,7 +415,12 @@
           <div class="chick2"></div>
           <div class="mouth"></div>
           <div class="nose"></div>
+          <div class="ear">
+            <div class="innerear"></div>
+            <div class="innerear2"></div>
+          </div>
         </div>
+        <div class="hair1"></div>
         
     </div>
     
