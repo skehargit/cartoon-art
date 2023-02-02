@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90vmin;
+  height: 90vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  /* background: linear-gradient(
+    #b48865 7%,
+    #b2805c 7% 15%,
+    #8c4c41 15% 16%,
+    #9c513e 16% 22%,
+    #da9164 22% 24%,
+    #d2724a 24% 38%,
+    #cc553d 38% 43%,
+    #9b4138 43% 46%,
+    #79342f 46% 47%,
+    #7a3f37 47% 50%,
+    #402021 50% 52%,
+    #b5553c 52% 55%,
+    #2a0b0b 55% 58%,
+    #a55b42 58% 62%,
+    #6d4b39 62% 63%,
+    #975640 63% 74%,
+    #040203 74% 77%,
+    #844635 77% 78%,
+    #795839 78% 79%,
+    #834634 79% 81%,
+    #85523d 81% 87%,
+    #714c39 87%
+  ); */
+  background-image:url("img-3.png");
+  background-size: cover;
+  background-position: center;
+}
+.heart {
+  background-color: rgb(244, 73, 6);
+  /* display: inline-block; */
+  height: 3%;
+  /* margin: 0 10px; */
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: rotate(-45deg);
+  width: 3%;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: rgb(244, 73, 6);
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.heart:before {
+  top: -50%;
+}
+
+.heart:after {
+  left: 50%;
+}
+.face{
+  /* background-color:rgb(246, 216, 196) ; */
+  z-index: -10;
+}
+.face-1{
+  position: absolute;
+  height: 25%;
+  width: 30%;
+  border: 1px solid red;
+  /* border-radius: 0 0 0 80%; */
+  top: 27%;
+  left: 23.5%;
+  transform: rotate(-17deg);
+  z-index: -1;
+
+}
+.face-2{
+  position: absolute;
+  height: 25%;
+  width: 30%;
+  border: 1px solid red;
+  border-radius: 0 0 0 30%;
+  top: 32%;
+  left: 30%;
+  transform: rotate(-10deg);
+
+}
+.face-3{
+  position: absolute;
+  height: 18%;
+  width: 30%;
+  border: 1px solid red;
+  border-radius: 50% 50% 50% 45%;
+  top: 40%;
+  left: 25%;
+  transform: rotate(-10deg);
+
+}
+.eye{ 
+  background-color: rgb(66, 14, 14);
+  border: 1px solid rgb(77, 20, 20);
+  height: 36%;
+  width: 23%;
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  border-radius: 50%;
+  overflow: hidden;
+  /* transform: ; */
+}
+.eye-2{
+  height: 40%;
+  width: 30%;
+  left: 65%;
+  top: 55%;
+  transform: rotate(25deg);
+}
+.half-eye{ 
+  background: linear-gradient( #ffffff00, #670d0d38);
+  /* background-color: rgb(145, 26, 26); */
+  /* border: 1px solid red; */
+  height: 36%;
+  width: 23%;
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  border-radius: 0 0 100% 100%;
+  /* transform: ; */
+}
+.half-eye2{ 
+  /* background: linear-gradient(#e6646400, #d02f2f29); */
+  background-color: rgb(124, 27, 27);
+  /* border: 1px solid red; */
+  height: 30%;
+  width: 80%;
+  position: absolute;
+  top: 68%;
+  left: 7%;
+  border-radius: 0 0 150% 10%;
+  /* transform: ; */
+  z-index: 1;
+}
+.glowing{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  opacity: 20%;
+  height: 34%;
+  width: 21%;
+  position: absolute;
+  top: 44%;
+  left: 6%;
+  border-radius: 50%;
+  /* transform: ; */
+
+}
+.eyedot{
+  width: 25%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.826);
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  z-index: 1;
+}
+.eyedot-2{
+  width: 10%;
+  height: 7%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.874);
+  position: absolute;
+  top: 51%;
+  left: 14%;
+  z-index: 1;
+}
+.eyedot-3{
+  width: 10%;
+  height: 20%;
+  border-radius: 20% 20% 10% 20%;
+  background-color: rgba(255, 255, 255, 0.881);
+  position: absolute;
+  top: 68%;
+  left: 14%;
+  z-index: 2;
+  transform: rotate(20deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="face face-1">
+          <div class="eye">
+            <div class="eyedot"></div>
+            <div class="eyedot-2"></div>
+            <div class="eyedot-3"></div>
+            <div class="half-eye2"></div>
+          </div>
+          <!-- <div class="glowing"></div> -->
+          <div class="half-eye"></div>
+          <div class="eye eye-2">
+            <div class="eyedot"></div>
+            <div class="eyedot-2"></div>
+            <div class="eyedot-3"></div>
+            <div class="half-eye2"></div>
+          </div>
+          
+        </div>
+        <div class="face face-2"></div>
+        <div class="face face-3"></div>
+        
+    </div>
+    
+</body>
+</html>
