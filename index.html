@@ -22,63 +22,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  /* background: linear-gradient(
-    #b48865 7%,
-    #b2805c 7% 15%,
-    #8c4c41 15% 16%,
-    #9c513e 16% 22%,
-    #da9164 22% 24%,
-    #d2724a 24% 38%,
-    #cc553d 38% 43%,
-    #9b4138 43% 46%,
-    #79342f 46% 47%,
-    #7a3f37 47% 50%,
-    #402021 50% 52%,
-    #b5553c 52% 55%,
-    #2a0b0b 55% 58%,
-    #a55b42 58% 62%,
-    #6d4b39 62% 63%,
-    #975640 63% 74%,
-    #040203 74% 77%,
-    #844635 77% 78%,
-    #795839 78% 79%,
-    #834634 79% 81%,
-    #85523d 81% 87%,
-    #714c39 87%
-  ); */
-  /* background-image:url("img-3.png"); */
-  background-size: cover;
-  background-position: center;
-}
-.heart {
-  background-color: rgb(244, 73, 6);
-  /* display: inline-block; */
-  height: 3%;
-  /* margin: 0 10px; */
-  position: relative;
-  top: 10%;
-  left: 50%;
-  transform: rotate(-45deg);
-  width: 3%;
+  background-color: rgb(212,197,186);
+  /* background-image:url("https://media0.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif?cid=ecf05e4768f5jdoqcgjdoy9xk1ag87qn73xnxauhztk791yg&rid=giphy.gif&ct=g"); */
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: rgb(244, 73, 6);
-  border-radius: 50%;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.heart:before {
-  top: -50%;
-}
-
-.heart:after {
-  left: 50%;
-}
 .face{
   background-color:rgb(252,233,218) ;
   z-index: -1;
@@ -365,6 +314,7 @@
   top: 15%;
   left: 19%;
   transform: rotate(-30deg);
+  /* z-index: 1; */
 }
 .hair3{
   border: 3px solid yellow;
@@ -394,6 +344,7 @@
 }
 .hair8{
   border: 2px solid rgb(79, 19, 19);
+  overflow: hidden;
   background-color: rgb(108, 35, 37);
   height: 12%;
   width: 20%;
@@ -405,8 +356,9 @@
   z-index: -2;
 }
 .hair4{
+  overflow: hidden;
   
-  background-color:rgb(108, 35, 37) ;
+  /* background-color:rgb(108, 35, 37) ; */
   border: 2px solid yellow;
   border-bottom: none;
   border-right: none;
@@ -420,7 +372,8 @@
   z-index: -1;
 }
 .hair5{
-  background-color: rgb(108, 35, 37);
+  overflow: hidden;
+  /* background-color: rgb(108, 35, 37); */
   border: 1px solid yellow;
   border-bottom: none;
   border-right: none;
@@ -434,6 +387,7 @@
   z-index:-11 ;
 }
 .hair6{
+  overflow: hidden;
   background-color: rgb(108, 35, 37);
   border: 2px solid yellow;
   border-bottom: none;
@@ -447,6 +401,7 @@
   z-index:-12 ;
 }
 .hair7{
+ overflow: hidden;
   background-color: rgb(108, 35, 37);
   height: 50%;
   width: 35%;
@@ -458,6 +413,7 @@
   z-index:-11 ;
 }
 .hair9{
+  overflow: hidden;
   background-color:rgb(108, 35, 37) ;
   border: 2px solid yellow;
   height: 20%;
@@ -473,6 +429,7 @@
 .shair{
   background-image: linear-gradient(200deg, rgb(108,35,37), rgb(90, 30, 32));
   border: 2px solid rgb(78,20,19);
+  /* z-index: 2; */
 }
 .shair13{
   border-top: none;
@@ -495,6 +452,52 @@
   top: 33%;
   transform: rotate(-10deg);
 }
+.shair14-1{
+  background-image: linear-gradient(rgba(255, 255, 0, 0.123), rgba(255, 255, 0, 0));
+  border-bottom: none;
+  border-right: none;
+  height: 11%;
+  width: 22%;
+  border-radius: 120% 80% 0% 30%;
+  position: absolute;
+  top: 26%;
+  left: 12%;
+  transform: rotate(-60deg);
+  z-index: 1;
+}
+.shair14-2{
+  background-image: linear-gradient(rgb(108, 35, 37), rgba(108, 35, 37, 0.486));
+  /* background-color: ; */
+  /* background-color:rgb(108, 35, 37) ; */
+  /* border: 3px solid yellow; */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  height: 10%;
+  width: 10%;
+  border-radius: 120% 80% 100% 80%;
+  position: absolute;
+  top: 19%;
+  left: 24%;
+  transform: rotate(40deg);
+  z-index: 2;
+}
+.shair14-3{
+  background-image: linear-gradient(rgba(255, 255, 0, 0.039), rgba(255, 255, 0, 0));
+  background-color: rgb(108, 35, 37);
+  border: 1px solid yellow;
+  border-bottom: none;
+  border-right: none;
+  height: 30%;
+  width: 22%;
+  border-radius:100% ;
+  position: absolute;
+  top: 39%;
+  left: 25%;
+  transform: rotate(-100deg);
+  z-index: -12;
+}
+
 .shair1{
   border-top: none;
   border-radius: 20% 30% 20% 100%;
@@ -627,7 +630,6 @@
 .shair15{
   border-top: none;
   border-right: none;
-  border-radius: 20% 0% 0% 100%;
   height: 12%;
   width: 5%;
   position: absolute;
@@ -675,90 +677,90 @@
 
 .hl{
   border: 3px solid rgb(212,197,186);
-  /* box-shadow: 1px 2px 5px #000000c2;  */
 }
 .hairlines1{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 30%;
+  height: 40%;
   width: 20%;
   position: absolute;
   left: 70%;
-  top: 42%;
+  top: 10%;
   border-radius: 100%;
+  transform: rotate(-65deg);
 }
 .hairlines2{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 30%;
+  height: 40%;
   width: 20%;
   position: absolute;
-  left: 66%;
-  top: 47%;
+  left: 70%;
+  top: 5%;
   border-radius: 100%;
-  transform: rotate(40deg);
+  transform: rotate(-47deg);
 }
 .hairlines3{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 30%;
-  width: 20%;
+  height: 50%;
+  width: 30%;
   position: absolute;
-  left: 60%;
-  top: 50%;
+  left: 50%;
+  top: -5%;
   border-radius: 100%;
-  transform: rotate(40deg);
+  transform: rotate(-60deg);
 }
 .hairlines4{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 20%;
+  height: 40%;
   width: 20%;
   position: absolute;
-  left: 58%;
-  top: 53%;
+  left: 85%;
+  top: 20%;
   border-radius: 100%;
-  transform: rotate(40deg);
+  transform: rotate(-65deg);
 }
 .hairlines5{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 20%;
+  height: 40%;
   width: 20%;
   position: absolute;
-  left: 55%;
-  top: 58%;
+  left: 85%;
+  top: 30%;
   border-radius: 100%;
-  transform: rotate(40deg);
+  transform: rotate(-50deg);
 }
 .hairlines6{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 20%;
+  height: 40%;
   width: 20%;
   position: absolute;
-  left: 25%;
-  top: 49%;
+  left: 10%;
+  top: 2%;
   border-radius: 100%;
-  transform: rotate(120deg);
+  transform: rotate(-100deg);
 }
 .hairlines7{
   border-left: none;
   border-top: none;
   border-bottom: none;
-  height: 20%;
+  height: 40%;
   width: 20%;
   position: absolute;
-  left: 22%;
-  top: 45%;
+  left: 30%;
+  top: -6%;
   border-radius: 100%;
-  transform: rotate(120deg);
+  transform: rotate(-100deg);
 }
 .cuteness{
   background: linear-gradient(rgb(255,201,193), rgb(247, 172, 185));
@@ -818,6 +820,13 @@
 </head>
 <body>
     <div class="container">
+      <div class="heart heart1"></div>
+      <div class="heart heart2"></div>
+      <div class="heart heart3"></div>
+      <div class="heart heart4"></div>
+      <div class="heart heart5"></div>
+      <div class="heart heart6"></div>
+      <div class="heart heart7"></div>
         <div class="face face-1">
           
           
@@ -870,12 +879,30 @@
         <div class="hair hair2"></div>
         <div class="hair hair3"></div>
         <div class="hair hair4"></div>
-        <div class="hair5"></div>
+        <div class="hair5">
+          <div class="hl hairlines6">
+          </div>
+          <div class="hl hairlines7">
+          </div> 
+        </div>
         <div class="hair6"></div>
-        <div class="hair7"></div>
+        <div class="hair7">
+          <div class="hl hairlines1">
+          </div>
+          <div class="hl hairlines2">
+          </div>
+          <div class="hl hairlines3">
+          </div>
+          <div class="hl hairlines4">
+          </div>
+          <div class="hl hairlines5">
+          </div>
+        </div>
         <div class="hair hair8"></div>
         <div class=" hair9"></div>
-
+        <div class="shair14-3"></div>
+        <div class="shair14-2"></div>
+        <div class="shair14-1"></div>
         <div class="shair shair14"></div>
         <div class="shair shair13"></div>
         <div class="shair shair1"></div>
@@ -894,7 +921,7 @@
         <div class="shair shair17"></div>
         <div class="shair16"></div>
         <div class="shair18"></div>
-        <div class="hl hairlines1">
+        <!-- <div class="hl hairlines1">
         </div>
         <div class="hl hairlines2">
         </div>
@@ -907,7 +934,7 @@
         <div class="hl hairlines6">
         </div>
         <div class="hl hairlines7">
-        </div>
+        </div> -->
     </div>
     
 </body>
